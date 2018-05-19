@@ -149,7 +149,7 @@ func (ch *chain) Start() {
 
 	}
 
-	addr := fmt.Sprintf("ORDERER_FRONT_END_IP:%d", recvport)
+	addr := fmt.Sprintf("localhost:%d", recvport)
 	conn, err := net.Dial("tcp", addr)
 
 	if err != nil {
